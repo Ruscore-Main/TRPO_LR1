@@ -1,0 +1,12 @@
+C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\bin\Debug\TRPO_LR1.exe.config
+C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\bin\Debug\TRPO_LR1.exe
+C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\bin\Debug\TRPO_LR1.pdb
+C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\bin\Debug\MaterialSkin.dll
+C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.csprojAssemblyReference.cache
+C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.Form1.resources
+C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.Properties.Resources.resources
+C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.csproj.GenerateResource.cache
+C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.csproj.CoreCompileInputs.cache
+C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.csproj.CopyComplete
+C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.exe
+C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.pdb
