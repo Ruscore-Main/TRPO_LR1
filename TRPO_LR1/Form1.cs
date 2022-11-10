@@ -19,6 +19,9 @@ namespace TRPO_LR1
         int sum = 0;
         double water = 3;
         int conditition = 0;
+        bool showDiscount = false;
+        bool applyDiscount = false;
+        int sumWithDiscount = 0;
         Timer timer = new Timer();
         Timer making_timer = new Timer();
         Product[] products = new Product[5];
@@ -132,9 +135,17 @@ namespace TRPO_LR1
 
         private void Chek()
         {
-            string s = "Чек\n" + products[i].Get_Name() + " - " + products[i].Get_Cost() + "р\nНаличные: " + sum + "р\nСдача: " + Change_computation() + "р";
+            string s;
+            if (applyDiscount)
+            {
+                s = "Чек\n" + products[i].Get_Name() + " - " + sumWithDiscount + "р\nНаличные: " + sum + "р\nСдача: " + Change_computation() + "р";
+            }
+            else
+            {
+                s = "Чек\n" + products[i].Get_Name() + " - " + products[i].Get_Cost() + "р\nНаличные: " + sum + "р\nСдача: " + Change_computation() + "р";
+            }
             byte[] sb = Encoding.Default.GetBytes(s);
-            FileStream file = new FileStream("chek.txt", FileMode.OpenOrCreate);
+            FileStream file = new FileStream("chek.txt", FileMode.Create);
             file.Write(sb, 0, sb.Length);
             file.Close();
 
@@ -162,7 +173,15 @@ namespace TRPO_LR1
 
         private int Change_computation()
         {
-            return sum - products[i].Get_Cost();
+            if (applyDiscount)
+            {
+                return sum - sumWithDiscount;
+            }
+            else
+            {
+                return sum - products[i].Get_Cost();
+
+            }
         }
 
         private void tea_button_Click(object sender, EventArgs e)
@@ -224,6 +243,7 @@ namespace TRPO_LR1
                 change_button.Enabled = true;
                 sum += 500;
                 conditition = 3;
+                showDiscount = true;
                 screen.Text = "Баланс: " + sum + "p\n\nНажмите Далее";
             }
             timer.Start();
@@ -236,6 +256,7 @@ namespace TRPO_LR1
                 change_button.Enabled = true;
                 sum += 100;
                 conditition = 3;
+                showDiscount = true;
                 screen.Text = "Баланс: " + sum + "p\n\nНажмите Далее";
             }
             timer.Start();
@@ -248,6 +269,7 @@ namespace TRPO_LR1
                 change_button.Enabled = true;
                 sum += 50;
                 conditition = 3;
+                showDiscount = true;
                 screen.Text = "Баланс: " + sum + "p\n\nНажмите Далее";
             }
             timer.Start();
@@ -260,6 +282,7 @@ namespace TRPO_LR1
                 change_button.Enabled = true;
                 sum += 10;
                 conditition = 3;
+                showDiscount = true;
                 screen.Text = "Баланс: " + sum + "p\n\nНажмите Далее";
             }
             timer.Start();
@@ -272,6 +295,7 @@ namespace TRPO_LR1
                 change_button.Enabled = true;
                 sum += 5;
                 conditition = 3;
+                showDiscount = true;
                 screen.Text = "Баланс: " + sum + "p\n\nНажмите Далее";
             }
             timer.Start();
@@ -284,6 +308,7 @@ namespace TRPO_LR1
                 change_button.Enabled = true;
                 sum += 2;
                 conditition = 3;
+                showDiscount = true;
                 screen.Text = "Баланс: " + sum + "p\n\nНажмите Далее";
             }
             timer.Start();
@@ -296,6 +321,7 @@ namespace TRPO_LR1
                 change_button.Enabled = true;
                 sum += 1;
                 conditition = 3;
+                showDiscount = true;
                 screen.Text = "Баланс: " + sum + "p\n\nНажмите Далее";
             }
             timer.Start();
@@ -326,6 +352,9 @@ namespace TRPO_LR1
                 sum = 0;
                 i = 0;
                 conditition = 0;
+                applyDiscount = false;
+                showDiscount = false;
+                sumWithDiscount = 0;
             }
             timer.Start();
         }
@@ -345,7 +374,13 @@ namespace TRPO_LR1
             }
             else if (conditition == 3 && products[i].Get_Cost() <= sum)
             {
-
+                // Применение скидки
+                if (showDiscount)
+                {
+                    DialogResult result = MessageBox.Show("Применить скидочную карту?", "Discount", MessageBoxButtons.YesNo);
+                    applyDiscount = result == DialogResult.Yes;
+                    sumWithDiscount = Convert.ToInt32(Math.Ceiling(products[i].Get_Cost() * 0.8));
+                }
                 if (Change_computation() != 0)
                 {
                     screen.Text = "Сдача: " + Change_computation() + "p\n\nВозьмите сдачу";

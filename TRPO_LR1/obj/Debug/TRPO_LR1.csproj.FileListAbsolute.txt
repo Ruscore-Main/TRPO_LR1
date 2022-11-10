@@ -10,3 +10,15 @@ C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.csproj.CoreComp
 C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.csproj.CopyComplete
 C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.exe
 C:\Users\oobit\source\repos\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.pdb
+C:\Users\Ruslan\Desktop\TRPO\TRPO_LR1\TRPO_LR1\bin\Debug\TRPO_LR1.exe.config
+C:\Users\Ruslan\Desktop\TRPO\TRPO_LR1\TRPO_LR1\bin\Debug\TRPO_LR1.exe
+C:\Users\Ruslan\Desktop\TRPO\TRPO_LR1\TRPO_LR1\bin\Debug\TRPO_LR1.pdb
+C:\Users\Ruslan\Desktop\TRPO\TRPO_LR1\TRPO_LR1\bin\Debug\MaterialSkin.dll
+C:\Users\Ruslan\Desktop\TRPO\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.csprojAssemblyReference.cache
+C:\Users\Ruslan\Desktop\TRPO\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.Form1.resources
+C:\Users\Ruslan\Desktop\TRPO\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.Properties.Resources.resources
+C:\Users\Ruslan\Desktop\TRPO\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.csproj.GenerateResource.cache
+C:\Users\Ruslan\Desktop\TRPO\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.csproj.CoreCompileInputs.cache
+C:\Users\Ruslan\Desktop\TRPO\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.csproj.CopyComplete
+C:\Users\Ruslan\Desktop\TRPO\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.exe
+C:\Users\Ruslan\Desktop\TRPO\TRPO_LR1\TRPO_LR1\obj\Debug\TRPO_LR1.pdb
